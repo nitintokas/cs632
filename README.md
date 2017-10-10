@@ -44,3 +44,19 @@ Iris dataset includes 3 classes: Iris setosa, Iris versicolor and Iris virginica
 
 ...........
 PART 2
+
+1. What are the strengths and weaknesses of using a Bag of Words?
+
+Answer: Bag of words ignores the context of words, simplify ignoring th problem at some cost. It can fail badly depending on specific case.
+
+Example:
+
+God Father != Father god
+
+Bag of Words treatment couldn't distinguish these two cases.
+
+
+
+2. Which of your features do you think is most predictive, least predictive, and why?
+
+3. Did your classifier misclassify any examples? Why or why not?
