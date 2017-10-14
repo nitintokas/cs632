@@ -58,5 +58,7 @@ Bag of Words treatment couldn't distinguish these two cases.
 
 
 2. Which of your features do you think is most predictive, least predictive, and why?
+Answer: Features with highest weight are most predictive and common words as least predictive as being part of bag of words.
 
 3. Did your classifier misclassify any examples? Why or why not?
+Answer: The presence of tags were a big part of miscalculations, for example, html and xml tags. They confused the parser and hence reduction in accuracy, also data set is very small to train the classifier.
