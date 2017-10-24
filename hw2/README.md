@@ -11,7 +11,7 @@ predictions.txt contains prediction results
 
 final_model.h5 contains our trained model
 
-final.h5 contains trainer weights
+final_weights.h5 contains trained weights
 
 <b>Evaluation result</b>:
 [0.45179817318916321, 0.82999999642372135]
