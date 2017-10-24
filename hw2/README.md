@@ -13,6 +13,9 @@ final_model.h5 contains our trained model
 
 final.h5 contains trainer weights
 
+<b>Evaluation result</b>:
+[0.71639915739186111, 0.80799999892711638]
+
 <b>Training output</b> :
 
 Cats :- 5000
@@ -121,5 +124,4 @@ Epoch 49/50
 Epoch 50/50
 400/400 [==============================] - 57s - loss: 0.0859 - acc: 0.9688 - val_loss: 0.8158 - val_acc: 0.7990
 
-<b>evaluation result</b>:
-[0.71639915739186111, 0.80799999892711638]
+
