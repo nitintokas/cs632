@@ -5,7 +5,7 @@ extract_and_train.py : contains code for extraction of files and it trains the K
 
 predict.py : predicts the output
 
-validation1.npy and train1.npy are validation and training numpy array files
+validation1.npy : validation numpy array file used for prediction of cats and dogs images
 
 predictions.txt contains prediction results
 
