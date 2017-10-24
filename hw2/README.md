@@ -1,7 +1,7 @@
 <b>Homework 2</b>
 
 
-extract_and_train.py : contains code for extraction of files and it trains the KERAS model
+train.py : contains code for extraction of files and it trains the KERAS model
 
 predict.py : predicts the output
 
