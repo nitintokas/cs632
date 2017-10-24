@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[2]:
+# In[1]:
 
 """One-time script for extracting all the cat and dog images from CIFAR-10,
 and creating training and validation sets.
@@ -115,24 +115,19 @@ np.save('validation1.npy', {'images': test_images, 'labels': test_labels})
 model = Sequential()
 model.add(Conv2D(32, (3, 3), input_shape=(32, 32, 3)))
 model.add(Activation('relu'))
-
-#model.add(Conv2D(32, (3, 3)))
-#model.add(Activation('relu'))
 model.add(ZeroPadding2D((1, 1)))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 
-
-#model.add(Conv2D(64, (3, 3)))
-#model.add(Activation('relu'))
 
 model.add(Conv2D(64, (3, 3)))
 model.add(Activation('relu'))
 model.add(ZeroPadding2D((1, 1)))
 model.add(MaxPooling2D(pool_size=(2, 2)))
+#model.add(Dropout(0.25))
 
 
-#model.add(Conv2D(128, (3, 3)))
-#model.add(Activation('relu'))
+model.add(Conv2D(128, (3, 3)))
+model.add(Activation('relu'))
 
 model.add(Conv2D(128, (3, 3)))
 model.add(Activation('relu'))
@@ -157,7 +152,7 @@ model.compile(loss='binary_crossentropy',
               optimizer='adam',
               metrics=['accuracy'])
 
-batch_size = 20
+batch_size = 40
 
 train_datagen = ImageDataGenerator(
         rescale=1./255,
@@ -176,21 +171,15 @@ model.fit_generator(
         epochs=50,
         validation_data=validation_generator,
         validation_steps=2000 / batch_size)
-model.save_weights('final.h5')
+model.save_weights('final_weights.h5')
 # training weights
 
 
-# In[3]:
+# In[4]:
 
 model.evaluate_generator(validation_generator, 2000/batch_size)
 
 
-# In[6]:
+# In[5]:
 
 model.save("final_model.h5")
-
-
-# In[ ]:
-
-
-
