@@ -160,13 +160,13 @@ model.compile(loss='binary_crossentropy',
 batch_size = 20
 
 train_datagen = ImageDataGenerator(
-        rescale=1./32,
+        rescale=1./255,
         shear_range=0.2,
         zoom_range=0.2,
         horizontal_flip=True)
 
 train_generator = train_datagen.flow(train_images,train_labels,batch_size=40)
-test_datagen = ImageDataGenerator(rescale=1./32)
+test_datagen = ImageDataGenerator(rescale=1./255)
 
 validation_generator = test_datagen.flow(test_images,test_labels,batch_size=10)
 
