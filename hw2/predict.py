@@ -24,9 +24,9 @@ from keras.models import load_model
 #constants
 CAT_OUTPUT_LABEL = 1
 DOG_OUTPUT_LABEL = 0
-#TEST_FILE = sys.argv[1]
+TEST_FILE = sys.argv[1]
 
-TEST_FILE = "validation1.npy"
+#TEST_FILE = "validation1.npy"
 # This file will be created if it does not exist
 # and overwritten if it does
 
@@ -62,7 +62,6 @@ for i, image in enumerate(images):
 out.close()
 
 
-# In[ ]:
 
 
 
