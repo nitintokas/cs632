@@ -14,7 +14,9 @@ final_model.h5 contains our trained model
 final_weights.h5 contains trained weights
 
 <b>Evaluation result</b>:
+<pre>
 [0.45179817318916321, 0.82999999642372135]
+</pre>
 
 
 <b>Training output</b> :
