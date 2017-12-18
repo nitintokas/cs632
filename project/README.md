@@ -111,10 +111,10 @@ Evaluation of Model :
 [0.0030792794423177838, 1.0]
 </pre>
 
-<b>Imporovements</b>
+<b>Improvements</b>
 
 <p>
-The script can be made running in the backend which will read input signals and will then do neccessary operations. These operations will mostly comprise of simulating the model and saving it. Using this saved model predict the imagegroup infront of the camera.
+The scripts can be made to be running in the backend which will read input signals to do neccessary operations. These operations will mostly comprise of simulating the model and saving it. Using this saved model predict the imagegroup in-front of the camera.
 </p>
 
 <hr>
