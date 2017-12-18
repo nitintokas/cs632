@@ -110,3 +110,12 @@ Evaluation of Model :
 
 [0.0030792794423177838, 1.0]
 </pre>
+
+<b>Imporovements</b>
+
+<p>
+The script can be made running in the backend which will read input signals and will then do neccessary operations. These operations will mostly comprise of simulating the model and saving it. Using this saved model predict the imagegroup infront of the camera.
+</p>
+
+<hr>
+If there are still any queries related to this project please feel free to contact me.
