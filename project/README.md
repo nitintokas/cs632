@@ -36,6 +36,12 @@ Click images of 3 different groups and then simulate model. Next we need to get 
 Also attached is a video of the normal events following the above steps mentioned.
 
 <br>
+How does it work(Technical):
+<p>Basically the frontend is a Bootsrap powered HTML webpage, with some jQuery code which helps in connecting the frontend to backend. How? The answer is on the button click events to create snaps of different groups it calls a PHP script.</p>
+
+<p>Within the PHP script it makes a call to python script. All the calls are differentiated according to the GET parameter sent to the PHP script. Then a button for simulating model simulates the model and creates a h5 file.</p>
+
+<p>This h5 file is then used to recognize the image. Images are taken from laptop camera for the 3 groups and also for the final testing.</p>
 <pre>
 Simulation of Model: 
 
