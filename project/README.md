@@ -21,10 +21,7 @@ Technologies Used:
   python
   </li>
   <li>
-  Tensorflow
-  </li>
-  <li>
-  Keras
+  Keras (Using Tensorflow Backend)
   </li>
 
 </ul>
